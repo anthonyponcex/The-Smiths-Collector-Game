@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Smiths game</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  
+</head>
+<body>
+	<div class="container">
+		<div id="row">
+		<div id="col-md-4">
+			<h1>Crystals Collector!</h1>
+		</div>
+		</div>
+
+		<div id="row">
+		<div id="col-md-4">
+			<p>Instructions</p>
+		</div>
+		</div>
+
+		<div id="row">
+		<div id="col-md-3">
+		<!-- generate random # from through math.random, math floor from 19-120, -->
+		<div id="random-number"></div>
+		
+		</div>
+		
+		
+		<div id="col-md-3">
+		<!-- link inner html <div> here -->
+		Wins: <span id="wins"></span>
+		<br>
+		Losses: <span id="losses"></div>
+		</div>
+
+		<div id="row">
+		<!--assign each jewel a randomly selected  value from 1-12 -->
+		<div id="col-md-1">
+		<button class="smithsBtn" id="btn1" value="smithsVal"><img src="http://placehold.it/75x75"></div>
+		</div>
+
+		<div id="col-md-1">
+		<button class="smithsBtn" id="btn2"><img src="http://placehold.it/75x75"></div>
+		</div>
+
+		<div id="col-md-1">
+		<button class="smithsBtn" id="btn3"><img src="http://placehold.it/75x75"></div>
+		</div>
+
+		<div id="col-md-1">
+		<button class="smithsBtn" id="btn4"><img src="http://placehold.it/75x75"></div>
+		</div>
+		</div>
+
+		<div id="row">
+		<div id="col-md-3">
+		Your total score is:<span id="score"></span>
+		<!--Value of score is added from the corresponding values clicked from jewel
+			if user reaches the same value as total score, user wins, wins is added by 1
+			if users score is greater than the random value, user loses, losses is added by 1 -->
+		
+		</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
