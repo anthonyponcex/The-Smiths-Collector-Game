@@ -2,62 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Smiths game</title>
+  <title>The Smiths Game</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
 </head>
 <body>
-	<div class="container">
-		<div id="row">
-		<div id="col-md-4">
-			<h1>Crystals Collector!</h1>
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+			<h1>The Smiths Collector!</h1>
 		</div>
 		</div>
 
-		<div id="row">
-		<div id="col-md-4">
+		<div class="class">
+		<div class="col-md-4">
 			<p>Instructions</p>
 		</div>
 		</div>
 
-		<div id="row">
-		<div id="col-md-3">
+		<div class="row">
+		<div class="col-md-3">
 		<!-- generate random # from through math.random, math floor from 19-120, -->
-		<div id="random-number"></div>
-		
+		<span id="random-number"></span>
 		</div>
+			
 		
-		
-		<div id="col-md-3">
+		<div class="col-md-3">
 		<!-- link inner html <div> here -->
 		Wins: <span id="wins"></span>
 		<br>
-		Losses: <span id="losses"></div>
+		Losses: <span id="losses">
+		</div>
 		</div>
 
-		<div id="row">
+		<div class="row">
 		<!--assign each jewel a randomly selected  value from 1-12 -->
-		<div id="col-md-1">
+		<div class="col-md-3">
 		<button class="smithsBtn" id="btn1" value="smithsVal"><img src="http://placehold.it/75x75"></div>
-		</div>
+		
 
-		<div id="col-md-1">
+		<div class="col-md-3">
 		<button class="smithsBtn" id="btn2"><img src="http://placehold.it/75x75"></div>
-		</div>
+		
 
-		<div id="col-md-1">
+		<div class="col-md-3">
 		<button class="smithsBtn" id="btn3"><img src="http://placehold.it/75x75"></div>
+		
+
+		<div class="col-md-3">
+		<button class="smithsBtn" id="btn4"><img src="http://placehold.it/75x75">
+		</div>
 		</div>
 
-		<div id="col-md-1">
-		<button class="smithsBtn" id="btn4"><img src="http://placehold.it/75x75"></div>
-		</div>
-		</div>
-
-		<div id="row">
-		<div id="col-md-3">
+		<div class="row">
+		<div class="col-md-3">
 		Your total score is:<span id="score"></span>
 		<!--Value of score is added from the corresponding values clicked from jewel
 			if user reaches the same value as total score, user wins, wins is added by 1
