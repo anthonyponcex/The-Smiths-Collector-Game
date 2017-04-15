@@ -6,30 +6,36 @@
 
  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  
-</head>
+ <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-		<div class="col-md-4">
+		<div class="row text-center">
+		<div class="col-md-12">
 			<h1>The Smiths Collector!</h1>
 		</div>
 		</div>
 
-		<div class="class">
-		<div class="col-md-4">
-			<p>Instructions</p>
+		<div class="row text-center">
+		<div class="col-md-12">
+			<p>Instructions:</p>
+			<p>You will be given a random number at the start of the game</p>
+			<p>There are four Smiths band members below. By clicking on a Smiths bandmate, you will add a specific amunt of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number</p>
+			<p>The value of each Smiths bandmate is hidden from you until you click on it</p>
+			<p>Each time when the game starts, the game with change the values of each Bandmate</p>
 		</div>
 		</div>
 
-		<div class="row">
-		<div class="col-md-3">
+		<div class="row text-center">
+		<div class="col-md-12">
 		<!-- generate random # from through math.random, math floor from 19-120, -->
-		<span id="random-number"></span>
+		Number to Reach: <span id="random-number"></span>
+		</div>
 		</div>
 			
-		
-		<div class="col-md-3">
+		<div class="row text-center">
+		<div class="col-md-12">
 		<!-- link inner html <div> here -->
 		Wins: <span id="wins"></span>
 		<br>
@@ -37,35 +43,40 @@
 		</div>
 		</div>
 
-		<div class="row">
+		<div class="row text-center">
 		<!--assign each jewel a randomly selected  value from 1-12 -->
-		<div class="col-md-3">
-		<button class="smithsBtn" id="btn1" value="smithsVal"><img src="http://placehold.it/75x75"></div>
+		<div class="col-md-2"></div>
+		<div class="col-md-2">
+		<button class="smithsBtn" id="btn1" value="smithsVal"><img src="assets/images/rourke.jpg"></div>
 		
 
-		<div class="col-md-3">
-		<button class="smithsBtn" id="btn2"><img src="http://placehold.it/75x75"></div>
+		<div class="col-md-2">
+		<button class="smithsBtn" id="btn2"><img src="assets/images/babe.jpg"></div>
 		
 
-		<div class="col-md-3">
-		<button class="smithsBtn" id="btn3"><img src="http://placehold.it/75x75"></div>
+		<div class="col-md-2">
+		<button class="smithsBtn" id="btn3"><img src="assets/images/marr.jpeg"></div>
 		
 
-		<div class="col-md-3">
-		<button class="smithsBtn" id="btn4"><img src="http://placehold.it/75x75">
+		<div class="col-md-2">
+		<button class="smithsBtn" id="btn4"><img src="assets/images/joyce.jpg">
 		</div>
+		<div class="col-md-2"></div>
 		</div>
 
-		<div class="row">
-		<div class="col-md-3">
-		Your total score is:<span id="score"></span>
 		<!--Value of score is added from the corresponding values clicked from jewel
-			if user reaches the same value as total score, user wins, wins is added by 1
-			if users score is greater than the random value, user loses, losses is added by 1 -->
+		if user reaches the same value as total score, user wins, wins is added by 1
+		if users score is greater than the random value, user loses, losses is added by 1 -->
+		<div class="row">
+		<div class="col-md-12 text-center">
+		<h2>Your total score is:</h2><span id="score"></span>
+		
 		
 		</div>
 		</div>
 	</div>
+
+	
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>

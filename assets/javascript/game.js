@@ -7,21 +7,20 @@ var losses = 0;
 
 //Creating a random number between 12-120 for the user to add up to 
 var randomNumber = Math.floor(Math.random()*101+19);
-
 $("#random-number").html(randomNumber);
 
 
 
 //Setting up functions for wins/losses
 function youWon(){
-	alert("Winner winner chicken dinner!");
+	alert("Oscillate wildly, YOU WON!");
 	wins++
 	$("#wins").text(wins);
 	reset()
 }
 
 function youLose(){
-	alert("Loser loser nyquil boozer!")
+	alert("Loser; Heaven knows you're miserable now!")
 	losses++
 	$("#losses").text(losses);
 	reset()
